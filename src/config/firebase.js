@@ -4,7 +4,7 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDVsZb0kSH8qZoBGn3hSnwcPfAcMUsYTzQ",
+  apiKey: import.meta.env.VITE_FIREBASE_KEY,
   authDomain: "fasonfilms-71a95.firebaseapp.com",
   projectId: "fasonfilms-71a95",
   storageBucket: "fasonfilms-71a95.firebasestorage.app",
