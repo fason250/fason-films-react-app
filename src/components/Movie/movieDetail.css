@@ -1,0 +1,144 @@
+.movieInfo{
+    width: 100%;
+    display: flex;
+    padding: 24px 6%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.movieInfo .movie-thumbnail{
+    height: 330px;
+    align-self: flex-start;
+}
+.movieInfo .movie-thumbnail img{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.movieInfo .movie-details{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.movieInfo .movie-details .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.movieInfo .movie-details .name h2{
+    font-size: 20px;
+}
+.movieInfo .movie-details .name p{
+    color: #dddbdb;
+
+}
+.movieInfo .movie-details .name p span{
+    font-size: 1.2rem;
+    color: yellow;
+    font-weight: bold;
+
+}
+.movie-details .description{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: 200;
+    color: #c7c3c3;
+}
+.movie-details .production-company{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.movie-details .production-company img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.movie-details .production-company p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.movie-details .genres{
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+    text-transform: capitalize;
+    margin-block-end: 20px;
+}
+.movie-details .release-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.movie-details .release-date p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 5px;
+}
+.movie-details .release-date p > span{
+    font-size: 14px;
+    color: gray;
+
+}
+.related-movies{
+    width: 100%;
+    padding:10px 6%;
+}
+
+.nav-dark{
+    background: #141414;
+}
+
+@media (max-width: 800px){
+    .movieInfo{
+        flex-wrap: wrap;
+    }
+    .movieInfo .movie-thumbnail img{
+        width: 100%;
+    }
+    .movieInfo .movie-details{
+        width: 100%;
+    }
+   
+    .movie-details .production-company p{
+        font-size: 12px;
+    }
+
+    .movie-details .release-date{
+        margin-block: 10px;
+    }
+    .movie-details .release-date p{
+        font-size: 13px;
+    }
+    .movie-details .release-date p>span{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px){
+   
+    .movie-details .production-company p{
+        font-size: 10px;
+    }
+    .movie-details .production-company img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+
+
+
+

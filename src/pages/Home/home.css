@@ -1,0 +1,107 @@
+
+div.hero{
+    position: relative;
+}
+div.hero img.banner-image{
+    width: 100%;
+    mask-image: linear-gradient(to right,transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent,black 75%)
+}
+div.hero div.hero-texts{
+    position: absolute;
+    width: 100%;
+    padding-inline-start:  6%;
+    bottom: 0;
+}
+div.more-cards{
+    padding-inline-start:  6%;
+
+}
+div.hero div.hero-texts img.hero-text-img{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+div.hero div.hero-texts p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+div.hero div.hero-texts div.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+div.hero div.hero-texts div.hero-btns button.btn{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+div.hero div.hero-texts div.hero-btns button.btn img{
+    width: 25px;
+}
+div.hero div.hero-texts div.hero-btns button.dark-btn{
+    color: #fff;
+    background-color: #5d5d5eb3;
+}
+
+div.hero div.hero-texts div.hero-btns button.btn:hover{
+    background-color: #ffffffbf;
+}
+div.hero div.hero-texts div.hero-btns button.dark-btn:hover  {
+background-color: #6d6d6e66;
+}
+
+@media (max-width: 1024px){
+    .hero .tittle-cards{
+        display: none;
+    }
+    div.hero div.hero-texts div.hero-btns button.btn{
+        margin-bottom: -10px;
+    }
+}
+
+@media (max-width: 800px){
+    div.hero div.hero-texts{
+        padding-left: 4%;
+    }
+    div.hero div.hero-texts img.hero-text-img{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    div.hero div.hero-texts p{
+        font-size: 12px;
+    }
+    div.hero div.hero-texts div.hero-btns button.btn img{
+        width: 20px;
+    }
+    div.more-cards{
+        padding-left: 4%;
+    }
+
+}
+
+@media (max-width: 500px){
+    div.hero div.hero-texts img.hero-text-img{
+        display: none;
+    }
+    div.hero div.hero-texts div.hero-btns button.btn img{
+        width: 15px;
+    }
+    div.hero div.hero-texts div.hero-btns button.btn{
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}

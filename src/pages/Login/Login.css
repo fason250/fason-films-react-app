@@ -1,0 +1,135 @@
+div.login{
+    height: 100dvh;
+    background-image:linear-gradient(#0000007e,#0000007e), url(/background_banner.jpg);
+    padding: 20px 8%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.login .login-logo{
+     width: 150px;
+}
+div.login .login-form{
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 50px;
+    margin:0px auto;
+}
+
+div.login .login-form h2{
+     font-size: 32px;
+     font-weight: 500;
+     margin-bottom: 20px;
+}
+
+div.login .login-form form input{
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    margin: 12px 0px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+div.login-form form input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+}
+div.login-form form button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form-help{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color: #b3b3b3;
+     font-size: 13px;
+}
+.form-help .remember{
+    display: flex;
+    align-items: center;
+    gap: 5px;    
+
+}
+.form-help .remember input[type ="checkbox"]{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.form-switch{
+    margin-top: 40px;
+    color: #737373;
+    font-size: 14px;
+}
+.form-switch span{
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading img{
+    width: 60px;
+}
+
+@media (max-width: 500px ){
+    div.login{
+        padding: 15px 5%;
+    }
+    div.login .login-form{
+        padding: 20px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

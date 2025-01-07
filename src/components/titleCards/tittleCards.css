@@ -1,0 +1,103 @@
+div.tittle-cards{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.tittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tittle h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.tittle .navBtns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+.tittle .navBtns button{
+    width: 50px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffbf;
+    color: #010101;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tittle .navBtns button:hover{
+    transform: scale(1.1);
+    border: 1px solid #fff;
+}
+div.tittle-cards h2{
+     margin-bottom: 8px;
+}
+div.tittle-cards div.card-list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+div.tittle-cards div.card-list::-webkit-scrollbar{
+    display: none;
+}
+ .card{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+  .card p{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    white-space: nowrap;
+    width: max-content;
+    font-size: 14px;
+    font-weight: 600;
+}
+.card img{
+    width: 220px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 800px){
+    div.tittle-cards{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .tittle h2{
+        font-size: 20px;
+    }
+    .card img{
+        width: 200px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 500){
+ 
+    .tittle h2{
+        font-size: 15px;
+    }
+    .card img{
+        width: 165px;
+    }
+    .card p{
+        font-size: 10px;
+    }
+
+}

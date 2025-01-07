@@ -1,0 +1,30 @@
+
+div.player{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.player img.back-arrow-icon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+div.player iframe{
+    border-radius: 10px;
+    height: 500px;
+    margin-top: 10px;
+    width: 90%;
+}
+div.player .player-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-block: 20px;
+    font-size: 14px;
+}
